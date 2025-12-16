@@ -164,7 +164,8 @@
         <div class="header">
             <h1>📋 Termos de Uso e Política de Privacidade</h1>
             <p>Treino Cerebral</p>
-            <p style="font-size: 14px; margin-top: 8px; opacity: 0.85;">Última atualização: 15 de Dezembro de 2025</p>
+            <p style="font-size: 14px; margin-top: 8px; opacity: 0.85;">Última atualização: 16 de Dezembro de 2025</p>
+            <p style="font-size: 13px; margin-top: 8px; opacity: 0.8;">Versão 1.1 - Conforme LGPD (Lei 13.709/2018)</p>
         </div>
 
         <div class="content">
@@ -207,74 +208,188 @@
                 <h2>2. Política de Privacidade</h2>
                 
                 <h3>2.1 Informações Coletadas</h3>
-                <p><strong>Dados de Autenticação (Google OAuth):</strong></p>
+                <p><strong>Dados de Autenticação (Google/Facebook OAuth):</strong></p>
                 <ul>
-                    <li>Nome de usuário</li>
+                    <li>Nome completo</li>
+                    <li>Nome de usuário (apelido)</li>
                     <li>Email (não compartilhado publicamente)</li>
-                    <li>ID único do Google</li>
-                    <li>Foto de perfil</li>
+                    <li>ID único do provedor (Google/Facebook)</li>
+                    <li>Foto de perfil (URL)</li>
+                    <li>Data de criação da conta</li>
                 </ul>
                 
                 <p><strong>Dados de Jogo:</strong></p>
                 <ul>
-                    <li>Pontuações e progresso</li>
-                    <li>Histórico de partidas</li>
-                    <li>Estatísticas de desempenho</li>
-                    <li>Ranking semanal</li>
+                    <li>Pontuações e progresso (total_points, daily_points, level, xp)</li>
+                    <li>Histórico de partidas (game_sessions)</li>
+                    <li>Estatísticas de desempenho (tempo, dificuldade, conquistas)</li>
+                    <li>Ranking semanal e posição</li>
+                    <li>Sequências (streaks) e recordes pessoais</li>
+                    <li>Data e hora de cada sessão de jogo</li>
                 </ul>
                 
                 <p><strong>Dados do Modo Competidor (opcional):</strong></p>
                 <ul>
                     <li>Chave PIX (CPF, e-mail, telefone ou chave aleatória)</li>
                     <li>Status de competidor ativo/inativo</li>
+                    <li>Data de ativação do modo competidor</li>
                 </ul>
                 
-                <p><strong>Dados Técnicos:</strong></p>
+                <p><strong>Sistema "Convide e Ganhe" (opcional):</strong></p>
                 <ul>
-                    <li>Tipo de dispositivo</li>
-                    <li>Versão do app</li>
-                    <li>Logs de erro (anônimos)</li>
+                    <li>Código de convite único (6 caracteres)</li>
+                 p><strong>Finalidades principais:</strong></p>
+                <ul>
+                    <li><strong>Autenticação e identificação:</strong> Login seguro via OAuth</li>
+                    <li><strong>Funcionalidade do serviço:</strong> Salvar progresso, estatísticas e conquistas</li>
+                    <li><strong>Sincronização:</strong> Manter dados atualizados entre dispositivos</li>
+                    <li><strong>Ranking público:</strong> Exibir classificação semanal</li>
+                    <li><strong>Premiação:</strong> Envio de recompensas via PIX aos vencedores</li>
+                    <li><strong>Sistema de convites:</strong> Rastrear indicações e distribuir recompensas</li>
+                    <li><strong>Prevenção de fraudes:</strong> Detectar comportamentos suspeitos (bots, manipulação de scores)</li>
+                    <li><strong>Segurança:</strong> Proteger contra múltiplas contas, acessos não autorizados</li>
+                    <li><strong>Melhoria do serviço:</strong> Análise de uso, correção de bugs, otimizações</li>
+                    <li><strong>Suporte:</strong> Responder dúvidas e solicitações dos usuários</li>
+                    <li><strong>Cumprimento legal:</strong> Atender requisitos legais e regulatórios (LGPD)</li>
                 </ul>
-
-                <h3>2.2 Como Usamos os Dados</h3>
+                
+                <p><strong>Sistema Anti-Fraude:</strong> Implementamos monitoramento automatizado que analisa:</p>
                 <ul>
-                    <li>Autenticação e identificação do usuário</li>
-                    <li>Sincronização de progresso</li>
-                    <li>Exibição no ranking público</li>
-                    <li>Envio de premiações via PIX</li>
-                    <li>Análise de fraudes</li>
-                    <li>Melhoria do aplicativo</li>
-                </ul>
-
-                <h3>2.3 Compartilhamento de Dados</h3>
-                <p><strong>Público (visível no ranking):</strong></p>
+                    <li>Pontuações anormais ou impossíveis</li>
+                    <li>Velocidade de jogo (rate limiting: máx 20 jogos/min)</li>
+                    <li>Padrões suspeitos (scores idênticos repetidos, pontuações máximas frequentes)</li>
+                    <li>Tentativas de manipulação de pontos</li>
+                    <li>Múltiplos dispositivos na mesma conta</li>
+                    <li>Todas as tentativas de fraude são registradas em logs para análise
+                    <li>Tipo de dispositivo (Android/iOS)</li>
+                    <li>Versão do sistema operacional</li>
+                    <li>Versão do aplicativo</li>
+                    <li>Endereço IP (inicial e recente)</li>
+                    <li>Device hash (identificador único do dispositivo)</li>
+                    <li>LogDados Públicos (visível no ranking):</strong></p>
                 <ul>
-                    <li>Nome de usuário</li>
+                    <li>Nome de usuário (apelido escolhido)</li>
                     <li>Foto de perfil</li>
-                    <li>Pontuação</li>
+                    <li>Pontuação total e semanal</li>
                     <li>Posição no ranking</li>
+                    <li>Level e XP</li>
+                    <li>Conquistas desbloqueadas (badges)</li>
                 </ul>
                 
-                <p><strong>Privado (nunca compartilhado):</strong></p>
+                <p><strong>Dados Privados (NUNCA compartilhados publicamente):</strong></p>
                 <ul>
-                    <li>Email</li>
+                    <li>Email completo</li>
                     <li>Chave PIX completa</li>
-                    <li>Dados técnicos do dispositivo</li>
+                    <li>Endereço IP</li>
+                    <li>Device hash</li>
+                    <li>ID único do Google/Facebook</li>
+                    <li>Logs de segurança e fraude</li>
+                    <li>Histórico detalhado de jogos</li>
                 </ul>
                 
-                <p><strong>Terceiros:</strong></p>
+                <p><strong>Compartilhamento com Terceiros (estritamente necessário):</strong></p>
                 <ul>
+                    <li><strong>Google/Facebook:</strong> Autenticação OAuth 2.0 (recebemos apenas dados públicos do perfil)</li>
+                 p>Implementamos medidas técnicas e organizacionais para proteger seus dados:</p>
+                <p><strong>Medidas Técnicas:</strong></p>
+                <ul>
+                    <li><strong>Criptografia em trânsito:</strong> HTTPS/TLS 1.3 em todas as comunicações</li>
+                    <li><strong>Criptografia em repouso:</strong> Banco de dados Supabase com criptografia AES-256</li>
+                    <li><strong>Row Level Security (RLS):</strong> Controle de acesso no nível da linha do banco de dados</li>
+                    <li><strong>Autenticação segura:</strong> OAuth 2.0 (Google/Facebook) - não armazenamos senhas</li>
+                    <li><strong>Triggers de segurança:</strong> Validação automática de dados antes de salvar</li>
+                    <li><strong>Rate limiting:</strong> Proteção contra ataques de força bruta e spam</li>
+                    <li><strong>Logs de auditoria:</strong> Registro de todas ações administrativas e suspeitas</li>
+                    <li><strong>Validação de entrada:</strong> Sanitização de dados para prevenir SQL injection e XSS</li>
+                    <li><strong>Isolamento de ambiente:</strong> Separação entre desenvolvimento e produção</li>
+                </ul>
+                
+                <p><strong>Medidas Organizacionais:</strong></p>
+                <ul>
+                    <li>Acesso restrito apenas a administradores autorizados (vitoranselmo310@gmail.com)</li>
+                    <li>Chaves API e credenciais armazenadas em variáveis de ambiente</li>
+                    <li>Revisão periódica de acessos e permissões</li>
+                    <li>Política de resposta a incidentes de segurança</li>
+                    <li>Backups automáticos diários</li>
+                </ul>
+                
+                <p><strong>⚠️ Importante:</strong> Nenhum sistema é 100% seguro. Em caso de violação de dados, notificaremos todos os usuários afetados dentro de 72 horas, conforme exigido pela LGPD.</p>
+                 - Lei 13.709/2018)</h3>
+                <p>Conforme a Lei Geral de Proteção de Dados, você possui os seguintes direitos:</p>
+                <ul>
+                    <li><strong>Confirmação e Acesso (Art. 18, I e II):</strong> Confirmar se tratamos seus dados e solicitar cópia completa</li>
+                    <li><strong>Correção (Art. 18, III):</strong> Corrigir dados incompletos, inexatos ou desatualizados</li>
+                    <li><strong>Anonimização ou Bloqueio (Art. 18, IV):</strong> Solicitar anonimização ou bloqueio de dados desnecessários</li>
+                    <li><strong>Eliminação (Art. 18, VI):</strong> Deletar sua conta e todos os dados associados permanentemente</li>
+                    <li><strong>Portabilidade (Art. 18, V):</strong> Exportar seus dados em formato estruturado (JSON/CSV)</li>
+                    <li><strong>Informação sobre Compartilhamento (Art. 18, VII):</strong> Saber com quem compartilhamos seus dados</li>
+                    <li><strong>Revogação do Consentimento (Art. 18, IX):</strong> Retirar consentimento a qualquer momento</li>
+                    <li><strong>Oposição ao Tratamento (Art. 18, § 2º):</strong> Opor-se a tratamentos realizados sem seu consentimento</li>
+                    <li><strong>Revisão de Decisões Automatizadas (Art. 20):</strong> Revisar decisões baseadas apenas em tratamento automatizado (ex: sistema anti-fraude)</li>
+                <p>Mantemos seus dados apenas pelo tempo necessário para as finalidades descritas:</p>
+                <ul>
+                    <li><strong>Conta ativa:</strong> Dados mantidos enquanto a conta existir e estiver em uso</li>
+                    <li><strong>Conta inativa:</strong> Após 2 anos sem acesso, enviamos aviso e deletamos em 30 dias</li>
+                    <li><strong>Conta deletada:</strong> Exclusão completa em até 30 dias (exceto dados legalmente obrigatórios)</li>
+                    <li><strong>Dados de ranking:</strong> Histórico estatístico agregado (sem identificação) mantido por 2 anos</li>
+                    <li><strong>Logs de segurança (fraud_logs):</strong> Mantidos por 6 meses para prevenção de fraudes</li>
+                    <li><strong>Logs de auditoria administrativa:</strong> 5 anos (exigência legal)</li>
+                    <li><strong>Dados de pagamento PIX:</strong> 5 anos (exigência fiscal - Lei 12.682/2012)</li>
+                    <li><strong>Backups:</strong> Mantidos por 90 dias, após isso dados deletados são irrecuperáveis</li>
+                </ul>
+                
+                <h3>2.7 Cookies e Tecnologias Similares</h3>
+                <p>O aplicativo utiliza armazenamento local para melhorar sua experiência:</p>
+                <ul>
+                    <li><strong>LocalStorage:</strong> Salvar progresso offline, preferências de jogos</li>
+                    <li><strong>Session Storage:</strong> Manter sessão de login ativa (token OAuth)</li>
+                    <li><strong>AdMob SDK:</strong> Pode usar identificador de publicidade para anúncios personalizados</li>
+                </ul>
+                <p>Você pode limpar esses dados nas configurações do app ou do dispositivo.</p>
+                
+                <h3>2.8 Transferência Internacional de Dados</h3>
+                <p>Seus dados podem ser armazenados e processados fora do Brasil:</p>
+                <ul>
+                    <li><strong>Supabase:</strong> Servidores nos EUA/Europa (cláusulas contratuais padrão da UE)</li>
+                    <li><strong>Google (OAuth/AdMob):</strong> EUA (Privacy Shield Framework)</li>
+                    <li><strong>Facebook (OAuth):</strong> EUA (adequações LGPD)</li>
+                </ul>
+                <p>Garantimos que esses provedores cumprem padrões adequados de proteção de dados.</p<li>Assunto: "LGPD - [Seu Direito]" (ex: "LGPD - Solicitação de Exclusão")</li>
+                    <li>Prazo de resposta: Até 15 dias corridos</li>
+                    <li>Gratuito (primeira solicitação), podemos cobrar taxa razoável em solicitações repetidas</li>
+                </ul>
+                
+                <p><strong>Controlador de Dados:</strong> Vitor Anselmo Moreira (vitoranselmo310@gmail.com)</p>
+                <p><strong>Encarregado (DPO):</strong> Mesmo contato acima
                     <li><strong>Google:</strong> Para autenticação OAuth</li>
                     <li><strong>Supabase:</strong> Para armazenamento de dados (servidor seguro)</li>
                     <li><strong>AdMob:</strong> Para exibição de anúncios</li>
-                    <li><strong>Instituições financeiras:</strong> Para pagamentos PIX (apenas últimos 4 dígitos da chave)</li>
-                </ul>
-
-                <h3>2.4 Segurança dos Dados</h3>
+                <h3>3.4 Fraudes e Penalidades</h3>
+                <p><strong>Sistema Anti-Fraude Automatizado:</strong> Monitoramos continuamente comportamentos suspeitos:</p>
                 <ul>
-                    <li>Criptografia em trânsito (HTTPS/TLS)</li>
-                    <li>Banco de dados protegido com Row Level Security (RLS)</li>
-                    <li>Autenticação via Google OAuth 2.0</li>
+                    <li>Pontuações impossíveis ou acima do limite do jogo</li>
+                    <li>Velocidade de jogo anormal (rate limiting)</li>
+                    <li>Padrões suspeitos (scores idênticos repetidos 3+ vezes em 1 hora)</li>
+                    <li>Pontuações máximas frequentes (5+ scores >19k em 24 horas)</li>
+                    <li>Tentativas de manipulação de pontos no banco de dados</li>
+                    <li>Múltiplas contas do mesmo dispositivo</li>
+                </ul>
+                
+                <p><strong>Consequências Automáticas:</strong></p>
+                <ul>
+                    <li>Bloqueio imediato da pontuação suspeita</li>
+                    <li>Registro em fraud_logs para análise</li>
+                    <li>Notificação ao usuário sobre comportamento detectado</li>
+                </ul>
+                
+                <p><strong>Penalidades Manuais (após revisão):</strong></p>
+                <ul>
+                    <li><strong>1ª infração confirmada:</strong> Perda de pontos + aviso formal</li>
+                    <li><strong>2ª infração:</strong> Suspensão de 30 dias + perda de elegibilidade para premiação</li>
+                    <li><strong>3ª infração:</strong> Banimento permanente + zeragem de pontos + bloqueio de IP/dispositivo</li>
+                </ul>
+                
+                <p><strong>Direito de Defesa:</strong> Você pode contestar decisões do sistema anti-fraude enviando email com evidências.</p>li>Autenticação via Google OAuth 2.0</li>
                     <li>Chaves PIX armazenadas de forma segura</li>
                     <li>Acesso restrito apenas a administradores autorizados</li>
                 </ul>
@@ -312,23 +427,72 @@
                     <li>Idade mínima: 18 anos (para receber premiação)</li>
                     <li>Chave PIX deve estar ativa e em nome do titular da conta</li>
                 </ul>
-
-                <h3>3.3 Regras do Ranking</h3>
+ (as is). Fazemos o possível para garantir qualidade e disponibilidade, mas:</p>
                 <ul>
-                    <li>Duração: 1 semana (Segunda 00h a Domingo 23h59)</li>
-                    <li>Reset: Domingos às 20h</li>
+                    <li>Não garantimos disponibilidade 100% do tempo (podem ocorrer manutenções)</li>
+                    <li>Não somos responsáveis por perda de progresso devido a problemas técnicos do dispositivo</li>
+                    <li>Não somos responsáveis por indisponibilidade de serviços terceiros (Google, Facebook, Supabase)</li>
+                    <li>Não garantimos que o aplicativo seja livre de erros ou bugs (mas trabalharemos para corrigi-los)</li>
+                    <li>Não somos responsáveis por decisões baseadas nas informações do aplicativo</li>
+                    <li>Em caso de problemas técnicos durante competição, podemos cancelar a temporada sem premiação</li>
+                </ul>
+                <p><strong>Limitação de Danos:</strong> Nossa responsabilidade máxima é limitada ao valor da premiação da temporada atual.</p>
+                
+                <h3>5.5 Propriedade Intelectual</h3>
+                <ul>
+                    <li>Todo conteúdo (código, design, jogos, textos, imagens) é protegido por direitos autorais</li>
+                    <li>Você não pode copiar, modificar, distribuir ou criar obras derivadas</li>
+                    <li>Uso comercial não autorizado está proibido</li>
+                    <li>Marca "Treino Cerebral" e logotipo são de propriedade exclusiva
                     <li>Premiação: Top 3 do ranking semanal</li>
                     <li>Pontuação mínima para concorrer: 100 pontos</li>
                 </ul>
 
-                <h3>3.4 Fraudes e Penalidades</h3>
-                <p><strong>Proibido:</strong> Múltiplas contas, bots, scripts, manipulação de pontuação</p>
-                <p><strong>Penalidades:</strong></p>
-                <ul>
-                    <li>1ª infração: Perda de pontos + aviso</li>
-                    <li>2ª infração: Suspensão de 30 dias</li>
-                    <li>3ª infração: Banimento permanente</li>
-                </ul>
+                <h3>3.6 Contato e Suporte</h3>
+                <div class="contact-box">
+                    <p style="margin-bottom: 12px;"><strong>📧 Contato Principal:</strong></p>
+                    <p style="font-size: 18px; margin-bottom: 16px;">
+                        <a href="mailto:vitoranselmo310@gmail.com">vitoranselmo310@gmail.com</a>
+                    </p>
+                    
+                    <p style="margin-bottom: 8px;"><strong>Use este email para:</strong></p>
+                    <ul style="margin-top: 8px; margin-bottom: 16px;">
+                        <li>Exercer direitos LGPD (acesso, exclusão, portabilidade, etc.)</li>
+                        <li>Reportar problemas técnicos ou bugs</li>
+                        <li>Solicitar suporte sobre pagamentos PIX</li>
+                        <li>Contestar decisões do sistema anti-fraude</li>
+                        <li>Reportar violações de termos de uso</li>
+                        <li>Dúvidas gerais sobre o aplicativo</li>
+                    </ul>Vitor Anselmo Moreira - Todos os direitos reservados</p>
+            <p style="margin-top: 12px; font-size: 13px;">
+                📱 Aplicativo ID: br.com.vam.treinocerebral
+            </p>
+            <p style="margin-top: 8px; font-size: 12px;">
+                Desenvolvido com ❤️ no Brasil | Conforme LGPD (Lei 13.709/2018)
+            </p>
+            <p style="margin-top: 12px; font-size: 12px; opacity: 0.7;">
+                Versão dos Termos: 1.1 | Última atualização: 16/12/2025
+            
+                    
+                    <p style="font-size: 14px; color: var(--text); margin-bottom: 8px;">
+                        <strong>Controlador de Dados (LGPD):</strong> Vitor Anselmo Moreira
+                    </p>
+                    <p style="font-size: 14px; color: var(--text); margin-bottom: 16px;">
+                        <strong>Encarregado (DPO):</strong> Mesmo contato
+                    </p>
+                    
+                    <p style="margin-bottom: 0; font-size: 14px; color: var(--text-light);">
+                        ⏰ <strong>Prazo de Resposta:</strong> Até 48 horas úteis (suporte geral) | 15 dias (solicitações LGPD)
+                    </p>
+                </div>
+                
+                <h3>5.7 Reclamações e ANPD</h3>
+                <p>Se não ficar satisfeito com nossa resposta, você pode registrar reclamação na:</p>
+                <div class="contact-box">
+                    <p style="margin-bottom: 8px;"><strong>Autoridade Nacional de Proteção de Dados (ANPD)</strong></p>
+                    <p style="font-size: 14px; margin: 0;">
+                        🌐 Website: <a href="https://www.gov.br/anpd" target="_blank">www.gov.br/anpd</a><br>
+                        📧 Email: atendimento@anpd.gov.br
             </div>
 
             <div class="section">
